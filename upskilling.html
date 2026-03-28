@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Up Skilling | EVOLV</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="cursor-glow"></div>
+
+  <header class="navbar">
+    <div class="container nav-content">
+      <a href="index.html" class="logo">
+        <img src="logo.png" alt="EVOLV Logo" class="main-logo">
+      </a>
+
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="index.html#portfolio">Portfolio</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="section light-section">
+    <div class="container project-page">
+
+      <div class="project-header">
+        <img src="projects/upskilling/up-logo.png" alt="Up Skilling Logo" class="project-logo">
+
+        <div>
+          <span class="category-badge education-badge">Education</span>
+          <h1>Up Skilling</h1>
+          <p class="project-intro">
+            A modern programming education brand with a clear tech-driven identity, designed to feel fresh, motivating, and professional for learners.
+          </p>
+        </div>
+      </div>
+
+      <div class="project-gallery">
+  <img src="projects/upskilling/up-1.png" alt="Up Skilling Work 1" class="gallery-image">
+  <img src="projects/upskilling/up-2.png" alt="Up Skilling Work 2" class="gallery-image">
+  <img src="projects/upskilling/up-3.png" alt="Up Skilling Work 3" class="gallery-image">
+  <img src="projects/upskilling/up-4.png" alt="Up Skilling Work 4" class="gallery-image">
+  <img src="projects/upskilling/up-5.png" alt="Up Skilling Work 5" class="gallery-image">
+  <img src="projects/upskilling/up-6.png" alt="Up Skilling Work 6" class="gallery-image">
+  <img src="projects/upskilling/up-7.png" alt="Up Skilling Work 7" class="gallery-image">
+  <img src="projects/upskilling/up-8.png" alt="Up Skilling Work 8" class="gallery-image">
+  <img src="projects/upskilling/up-9.png" alt="Up Skilling Work 9" class="gallery-image">
+  <img src="projects/upskilling/up-10.png" alt="Up Skilling Work 10" class="gallery-image">
+</div>
+
+      <div class="project-brief-box">
+        <h2>Project Brief</h2>
+        <p>
+          Up Skilling is an education brand in the programming and technology field.
+          The project focused on building a strong digital identity that feels modern, clear, and inspiring.
+          The visual direction aimed to present the brand in a clean and engaging way that speaks to learners, reflects growth, and supports a premium educational image.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <script>
+  const images = [
+    "projects/upskilling/up-1.png",
+    "projects/upskilling/up-2.png",
+    "projects/upskilling/up-3.png",
+    "projects/upskilling/up-4.png",
+    "projects/upskilling/up-5.png",
+    "projects/upskilling/up-6.png",
+    "projects/upskilling/up-7.png",
+    "projects/upskilling/up-8.png",
+    "projects/upskilling/up-9.png",
+    "projects/upskilling/up-10.png"
+  ];
+
+  let currentSlide = 0;
+
+  function changeSlide(direction) {
+    currentSlide += direction;
+
+    if (currentSlide < 0) {
+      currentSlide = images.length - 1;
+    }
+
+    if (currentSlide >= images.length) {
+      currentSlide = 0;
+    }
+
+    document.getElementById("slideImage").src = images[currentSlide];
+  }
+</script>
+
+  <script src="script.js"></script>
+</body>
+</html>
